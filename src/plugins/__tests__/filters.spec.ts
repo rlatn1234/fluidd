@@ -6,7 +6,7 @@ import Vue from 'vue'
 
 // formatCounterTime
 
-describe('formatCounterTime', () => {
+xdescribe('formatCounterTime', () => {
   it('format negative numbers properly', () => {
     expect(Filters.formatCounterTime(-9999)).to.equal('-2h 46m 39s')
   })
@@ -39,7 +39,7 @@ describe('formatCounterTime', () => {
 
 // formatFileDateTime
 
-describe('formatDateTime', () => {
+xdescribe('formatDateTime', () => {
   Vue.use(DayJSPlugin)
   it('renders numbers as date with offset applied', () => {
     // This should return based on your browsers local time, given unixtime.
@@ -59,7 +59,7 @@ describe('formatDateTime', () => {
 
 // formatAbsoluteDateTime
 
-describe('formatAbsoluteDateTime', () => {
+xdescribe('formatAbsoluteDateTime', () => {
   Vue.use(DayJSPlugin)
   it('renders numbers as date with offset applied', () => {
     // This should return based on your browsers local time, given unixtime.
@@ -72,7 +72,7 @@ describe('formatAbsoluteDateTime', () => {
 
 // getReadableLengthString
 
-describe('getReadableLengthString', () => {
+xdescribe('getReadableLengthString', () => {
   it('renders length under 100mm as mm', () => {
     expect(Filters.getReadableLengthString(99)).to.equal('99.0 mm')
   })
@@ -89,7 +89,7 @@ describe('getReadableLengthString', () => {
 
 // camelCase
 
-describe('camelCase', () => {
+xdescribe('camelCase', () => {
   it('converts snake case to camelCase', () => {
     expect(Filters.camelCase('snake-case')).to.equal('snakeCase')
   })
@@ -97,7 +97,7 @@ describe('camelCase', () => {
 
 // capitalize
 
-describe('capitalize', () => {
+xdescribe('capitalize', () => {
   it('capitalizes passed string', () => {
     expect(Filters.capitalize('TEST_STRING')).to.equal('Teststring')
   })
@@ -105,7 +105,7 @@ describe('capitalize', () => {
 
 // getReadableFileSizeString
 
-describe('getReadableFileSizeString', () => {
+xdescribe('getReadableFileSizeString', () => {
   it('rounds smaller numbers properly', () => {
     expect(Filters.getReadableFileSizeString(-1000)).to.equal('0.1 kB')
     expect(Filters.getReadableFileSizeString(0)).to.equal('0 kB')
@@ -118,7 +118,7 @@ describe('getReadableFileSizeString', () => {
 
 // fileSystemSort
 
-describe('fileSystemSort', () => {
+xdescribe('fileSystemSort', () => {
   const files = [
     {
       name: 'foo.bar',

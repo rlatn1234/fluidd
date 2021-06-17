@@ -15,14 +15,18 @@
     "baseUrl": ".",
     "types": [
       "webpack-env",
-      "mocha",
       "chai",
       "vuetify",
+      "jest",
+      "node",
       "vue-meta"
     ],
     "paths": {
       "@/*": [
         "src/*"
+      ],
+      "tests/*": [
+        "tests/*"
       ]
     },
     "lib": [
